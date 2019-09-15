@@ -1,0 +1,7 @@
+github.com/google/uuid v1.1.1 h1:Gkbcsh/GbpXz7lPftLA3P6TYMwjCLYm83jiFQZF/3gY=
+github.com/google/uuid v1.1.1/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
+github.com/kitauji/kproxy v0.0.0-20190915065154-b79c6ea3ba08 h1:RUXLJStiW/8FLXjXVD/ZNF8xGIoXzOP9q7/hTzDrNvU=
+github.com/kitauji/kutils v0.0.0-20190915063404-eb8b5ea2fcc4 h1:qC1siRD6FL2Lu+RrWLtFz0F600w8XGp+AWUHVwp0MII=
+github.com/kitauji/kutils v0.0.0-20190915063404-eb8b5ea2fcc4/go.mod h1:Iu8oDUczmUe/zKMPp59F5xt8bDVHQsvudMmvGt3uPBM=
+github.com/lithammer/shortuuid v3.0.0+incompatible h1:NcD0xWW/MZYXEHa6ITy6kaXN5nwm/V115vj2YXfhS0w=
+github.com/lithammer/shortuuid v3.0.0+incompatible/go.mod h1:FR74pbAuElzOUuenUHTK2Tciko1/vKuIKS9dSkDrA4w=
