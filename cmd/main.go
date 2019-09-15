@@ -11,7 +11,12 @@ import (
 	kcert "github.com/kitauji/kutils/certificate"
 )
 
+const (
+	DefaultProxyPort = ":8080"
+)
+
 func main() {
+	proxyPort := flag.String("port", DefaultProxyPort, "Proxy server's port such \":9999\"")
 	mitm := flag.Bool("mitm", false, "Enalbe/disable MITM(man-in-the-middle) mode. Default is false.")
 	caCertFile := flag.String("cacert", "", "CA's cert file path")
 	caKeyFile := flag.String("cakey", "", "CA's private key file path")
@@ -45,7 +50,7 @@ func main() {
 		return resp
 	}
 
-	if err := http.ListenAndServe(":8080", proxy); err != nil {
+	if err := http.ListenAndServe(*proxyPort, proxy); err != nil {
 		log.Printf("Error : %v", err)
 		os.Exit(1)
 	}
