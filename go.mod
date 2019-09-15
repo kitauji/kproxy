@@ -1,4 +1,4 @@
-module kproxy
+module github.com/kitauji/kproxy
 
 go 1.12
 

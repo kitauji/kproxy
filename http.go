@@ -40,14 +40,14 @@ func (proxy *ProxyServer) handleHTTP(w http.ResponseWriter, r *http.Request) {
 	}
 	defer resp.Body.Close()
 
-	copyHeaders(w.Header(), resp.Header)
-
 	// Call OnBeforeResponse handler
 	if proxy.OnBeforeResponse != nil {
 		resp = proxy.OnBeforeResponse(resp)
 	}
+	logResponse("HTTP Response", resp)
 
 	// Return HTTP status code and headers to the client
+	copyHeaders(w.Header(), resp.Header)
 	w.WriteHeader(resp.StatusCode)
 
 	// Return the body
